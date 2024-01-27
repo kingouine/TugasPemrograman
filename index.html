@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="shortcut icon" href="Foto/counter-4.png" type="image/x-icon">
+    <script>
+        function openbve(bve)
+        {
+            var i;
+            var x = document.getElementsByClassName("bve");
+            for (i = 0; i<x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(bve).style.display = "block";
+        }
+    </script>
+    <title>Tugas Besar WEB</title>
+</head>
+<body>
+    <div class="w3-container">
+        <center>
+            <img src="latar.jpg" width="100%" height="200">
+        </center>
+    </div>
+	<center>
+    <div class="w3-bar w3-red w3-card-4">
+	
+        <button class="w3-bar-item w3-button" onclick="openbve('motogp')">MOTO GP</button>
+        <button class="w3-bar-item w3-button" onclick="openbve('le_mans')">LE MANS</button>
+			<div class="w3-dropdown-hover">
+				<button class="w3-button">FORMULA</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<button class="w3-bar-item w3-button" onclick="openbve('formula 1')">FORMULA 1</button>
+					<button class="w3-bar-item w3-button" onclick="openbve('formula 2')">FORMULA 2</button>
+					<button class="w3-bar-item w3-button" onclick="openbve('formula 3')">FORMULA 3</button>
+				</div>
+			</div>	
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">PROFIL PRIBADI</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openbve('Gading')">Gading Pamungkas </button>
+                <button class="w3-bar-item w3-button" onclick="openbve('Motivasi Hidup')">Motivasi Hidup</button>
+                <button class="w3-bar-item w3-button" onclick="openbve('Kuliah')">Kuliah</button>
+		
+            </div>
+        </div>
+    </div>
+    <div id="Gading" class="w3-container bve w3-animate-top w3-teal" style="display: none;">
+        <center>
+        <hr>
+        <img src="gading.jpg" width="450" height="300">
+        <p class="w3-brown w3-card-4">Nama : Gading Pamungkas Sularto</p>
+        <p>Kelas : IF 10</p>
+        <p>NIM :10123406</p>
+        </center>
+    </div>
+    </div>
+    <div id="Motivasi Hidup" class="w3-container bve w3-animate-bottom" style="display: none;">
+        <h2>"Mencintai diri sendiri berarti memahami bahwa kamu tidak perlu menjadi sempurna untuk menjadi baik." KELAZZZ</h2>
+        <hr>
+    </div>
+    <div id="Kuliah" class="w3-container bve w3-animate-bottom" style="display: none;">
+        <center>
+        <h2>UNIVERSITAS KOMPUTER INDONESIA</h2>
+        <img src="unikom.jpg" width="300" height="300">
+        <hr>
+        </center>
+    </div>
+    <div id="motogp" class="w3-container bve w3-animate-bottom" style="display: none;">
+        <center>
+        <h2>MOTO GP</h2>
+        <img src="ducati.jpg" width="450"  height="400">
+        <p>Grand Prix Sepeda Motor adalah seri kejuaraan balap motor yang diselenggarakan di sirkuit jalanan yang disetujui dan diatur oleh Fédération Internationale de Motocyclisme. Sejumlah ajang balap sepeda motor independen telah digelar sejak awal abad ke-20 dan banyak ajang besar nasional mendapatkan nama Grand Prix.</p>
+        <hr>
+        </center>
+    </div>
+    <div id="formula 1" class="w3-container bve w3-animate-top w3-teal" style="display: none;">
+        <center>
+        <hr>
+        <img src="f1.jpg" width="450" height="300">
+        <p class="w3-purple w3-card-4">FERRARI</p>
+        <p>Formula Satu, disingkat Formula 1 atau F1, adalah kelas tertinggi balap mobil kursi tunggal yang diatur oleh Federasi Otomotif Internasional dan dimiliki oleh Formula One Group. Kata formula di "Formula Satu" mengacu pada peraturan dan regulasi yang harus diikuti oleh semua peserta</p>
+        </center>
+    </div>
+    </div>
+    <div id="formula 2" class="w3-container bve w3-animate top w3-teal" style="display: none;">
+        <center>
+		<hr>
+		<img src="f2.jpg" width="450" height="300">
+		<p class="w3-red w3-card-4">PREMA</p>
+		<p>Formula Dua adalah salah satu jenis balap mobil formula roda terbuka. Tercatat sudah tiga kali ajang ini muncul dalam nama yang berbeda-beda. Versi kejuaraan Formula Dua yang asli digelar dari musim 1950 sampai 1984 sebelum kemudian digantikan oleh Formula 3000 pada tahun 1985</p>
+		</center>
+	</div>
+    <div id="formula 3" class="w3-container bve w3-animate-top w3-teal" style="display: none;">
+        <center>
+        <hr>
+		<img src="f3.jpg" width="450" height="300">
+		<p class="w3-blue w3-card-4">TRIDENT</p>
+		<p>Formula Tiga, disebut juga Formula 3 atau F3, adalah salah satu balapan mobil kursi tunggal dari kategori formula. Balapan ini digelar di berbagai belahan dunia, baik di Asia, Eropa, Amerika Utara, Amerika Latin, dan Australia</p>
+        </center>
+    </div>
+    
+    <div id="le_mans" class="w3-container bve w3-animate-bottom" style="display: none;">
+        <center>
+        <h2>LE MANS</h2>
+        <img src="lemans.jpg" width="450"  height="400">
+        <p>Balapan Le Mans lahir dari ide ACO (Automobile Club de l'Ouest) sebagai ujian ketahanan untuk mobil dan daya tahan pengemudinya. Dengan format unik 24 jam non-stop, balapan ini menghadirkan tantangan ekstrem bagi pembalap dan mesin.</p>
+        <hr>
+        </center>
+    
+   
+      
+    </div>
+</body>
+</html>
